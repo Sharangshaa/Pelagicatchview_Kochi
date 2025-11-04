@@ -1,5 +1,6 @@
 # Pelagicatchview_Kochi
 A R shiny app showcasing mock spatial points of pelagic fisheries in Arabain sea
+
 PelagicatchView_Kochi is an interactive R Shiny application designed to demonstrate spatial and temporal visualization of pelagic longline fisheries data.
 The app simulates the fishing activity of vessels operating from Kochi, India, including mock spatial locations, catch summaries, and trip-level statistics.
 This app was conceptualized based on fieldwork conducted as part of the Wildlife Conservation Society (WCS)–India marine program by me.
