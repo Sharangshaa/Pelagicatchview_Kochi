@@ -6,6 +6,7 @@ This app was conceptualized based on fieldwork conducted as part of the Wildlife
 This project was developed to showcase interactive visualization techniques for fisheries monitoring and data management, using simulated data that mirrors realistic patterns while protecting the confidentiality of actual datasets.
 
 🔗 Live App: https://sharangshaa.shinyapps.io/Pelagicatchview_Kochi/
+
 🎯 Purpose
 
 The main goal of this app is to:
