@@ -10,7 +10,7 @@
 library(shiny)
 library(leaflet)
 library(tidyverse)
-df <- read.csv("effort_points.csv")
+effort_df <- read.csv("effort_points.csv")
 mean_lat <- mean(df$latitude, na.rm = TRUE)
 mean_lng <- mean(df$longitude, na.rm = TRUE)
 
@@ -41,13 +41,13 @@ ui <- fluidPage(
 server <- function(input, output, session) {
  ##create reactive object 
   filteredData <- reactive({
-    data <- df %>%
+     effort_df %>%
       ##defining slider filter for years
       filter(year >= input$year[1], year <= input$year[2])
     if (input$gear != "All") {
-      data <- data %>% filter(gear == input$gear)
+      effort_df %>% filter(gear == input$gear)
     }
-    data
+    effort_df
   })
   ## map features and defining default zoom
   output$map <- renderLeaflet({
@@ -80,5 +80,6 @@ server <- function(input, output, session) {
     
   }) 
 }
+
 
 shinyApp(ui = ui, server = server)
