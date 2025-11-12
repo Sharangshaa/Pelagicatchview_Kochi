@@ -1,20 +1,13 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    https://shiny.posit.co/
-#
+
 
 library(shiny)
 library(leaflet)
 library(tidyverse)
 effort_df <- read.csv("effort_points.csv")
-mean_lat <- mean(df$latitude, na.rm = TRUE)
-mean_lng <- mean(df$longitude, na.rm = TRUE)
+mean_lat <- mean(effort_df$latitude, na.rm = TRUE)
+mean_lng <- mean(effort_df$longitude, na.rm = TRUE)
 
-pal <- colorFactor("viridis", levels = unique(df$gear))
+pal <- colorFactor("viridis", levels = unique(effort_df$gear))
 # Define UI for application 
 ui <- fluidPage(
 
@@ -25,10 +18,10 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       selectInput("gear", "Select Gear", 
-                  choices = c("All", unique(df$gear))),
+                  choices = c("All", unique(effort_df$gear))),
       sliderInput("year", "Select Year", 
-                  min = min(df$year), max = max(df$year), 
-                  value = c(min(df$year), max(df$year)), step = 1, sep = "")
+                  min = min(effort_df$year), max = max(effort_df$year), 
+                  value = c(min(effort_df$year), max(effort_df$year)), step = 1, sep = "")
     ),
 
         # Show a plot of Indian ocean
@@ -83,3 +76,4 @@ server <- function(input, output, session) {
 
 
 shinyApp(ui = ui, server = server)
+
