@@ -1,13 +1,11 @@
-
-
 library(shiny)
 library(leaflet)
 library(tidyverse)
-effort_df <- read.csv("effort_points.csv")
-mean_lat <- mean(effort_df$latitude, na.rm = TRUE)
-mean_lng <- mean(effort_df$longitude, na.rm = TRUE)
+df <- read.csv("effort_points.csv")
+mean_lat <- mean(df$latitude, na.rm = TRUE)
+mean_lng <- mean(df$longitude, na.rm = TRUE)
 
-pal <- colorFactor("viridis", levels = unique(effort_df$gear))
+pal <- colorFactor("viridis", levels = unique(df$gear))
 # Define UI for application 
 ui <- fluidPage(
 
@@ -18,10 +16,10 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       selectInput("gear", "Select Gear", 
-                  choices = c("All", unique(effort_df$gear))),
+                  choices = c("All", unique(df$gear))),
       sliderInput("year", "Select Year", 
-                  min = min(effort_df$year), max = max(effort_df$year), 
-                  value = c(min(effort_df$year), max(effort_df$year)), step = 1, sep = "")
+                  min = min(df$year), max = max(df$year), 
+                  value = c(min(df$year), max(df$year)), step = 1, sep = "")
     ),
 
         # Show a plot of Indian ocean
@@ -34,13 +32,13 @@ ui <- fluidPage(
 server <- function(input, output, session) {
  ##create reactive object 
   filteredData <- reactive({
-     effort_df %>%
+    data <- df %>%
       ##defining slider filter for years
       filter(year >= input$year[1], year <= input$year[2])
     if (input$gear != "All") {
-      effort_df %>% filter(gear == input$gear)
+      data <- data %>% filter(gear == input$gear)
     }
-    effort_df
+    data
   })
   ## map features and defining default zoom
   output$map <- renderLeaflet({
@@ -74,6 +72,4 @@ server <- function(input, output, session) {
   }) 
 }
 
-
 shinyApp(ui = ui, server = server)
-
