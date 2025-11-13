@@ -8,7 +8,7 @@ This project was developed to showcase interactive visualization techniques for 
 
 🔗 Live App: https://sharangshaa.shinyapps.io/Pelagicatchview_Kochi/
 
-** Purpose**
+**Purpose**
 
 The main goal of this app is to:
 
@@ -18,7 +18,7 @@ Showcase R Shiny’s potential for fisheries data communication and decision sup
 
 Encourage open, reproducible tools for marine research and monitoring
 
-** Key Features**
+**Key Features**
 
 Interactive Map: Displays mock fishing ground locations generated randomly in pelagic Arabian sea
 
@@ -30,7 +30,7 @@ Data Filters: Explore fishing trips by gear type (longline and gillnet), and yea
 
  Dynamic UI: Built with R Shiny and leaflet for smooth interactivity
 
-** Data Disclaimer**
+**Data Disclaimer**
 
 The data displayed in this application are entirely simulated and do not represent real fishing locations or catches.
 
@@ -44,11 +44,11 @@ This project is intended for educational and demonstration purposes only.
 
 The underlying real data were collected during fieldwork at WCS–India, and are currently being analyzed for a manuscript on the socio-economic and ecological characteristics of pelagic shark fisheries in India.
 
-👤 Author
+ **Author**
 
 Sharang Shaa
 Fisheries Scientist | Marine Ecologist | Data analyst
-🎓 M.Sc. in Ecology & Environmental Sciences
-🦈 Research focus: Sustainable fisheries, shark ecology, data visualization
-📧 Contact: [sharangshaa@gmail.com]
-🌐 GitHub: github.com/Sharangshaa
+ M.Sc. in Ecology & Environmental Sciences
+ Research focus: Sustainable fisheries, shark ecology, data visualization
+ Contact: [sharangshaa@gmail.com]
+GitHub: github.com/Sharangshaa
