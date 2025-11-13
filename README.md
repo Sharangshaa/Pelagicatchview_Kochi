@@ -46,7 +46,7 @@ The underlying real data were collected during fieldwork at WCS–India, and are
 
  **Author**
 
-Sharang Shaa
+Sharang Payyat
 Fisheries Scientist | Marine Ecologist | Data analyst
  M.Sc. in Ecology & Environmental Sciences
  Research focus: Sustainable fisheries, shark ecology, data visualization
