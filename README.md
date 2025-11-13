@@ -1,4 +1,4 @@
-🔗 Live App: https://sharangshaa.shinyapps.io/Pelagicatchview_Kochi/
+🔗 Live App: https://sharangshaa.shinyapps.io/Pelagicatchview_Kochi/ (click on the fishing ground on the map to show catch stat)
 
 # Pelagicatchview_Kochi
 A R shiny app showcasing mock spatial points of pelagic fisheries in Arabain sea
