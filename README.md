@@ -8,7 +8,7 @@ This project was developed to showcase interactive visualization techniques for 
 
 🔗 Live App: https://sharangshaa.shinyapps.io/Pelagicatchview_Kochi/
 
-🎯 Purpose
+** Purpose**
 
 The main goal of this app is to:
 
@@ -17,18 +17,20 @@ Demonstrate spatial visualization of fishing operations and catch data of bill f
 Showcase R Shiny’s potential for fisheries data communication and decision support
 
 Encourage open, reproducible tools for marine research and monitoring
-⚙️ Key Features
 
-🗺️ Interactive Map: Displays mock fishing ground locations generated randomly in pelagic Arabian sea
+** Key Features**
 
-🎣 Catch Composition: Visual summaries of catch of billfishes and sharks
+Interactive Map: Displays mock fishing ground locations generated randomly in pelagic Arabian sea
 
-⛵ Trip Statistics: active fishing days
-🧮 Data Filters: Explore fishing trips by gear type (longline and gillnet), and year slider
+Catch Composition: Visual summaries of catch of billfishes and sharks
 
-💡 Dynamic UI: Built with R Shiny and leaflet for smooth interactivity
+Trip Statistics: active fishing days
 
-⚠️ Data Disclaimer
+Data Filters: Explore fishing trips by gear type (longline and gillnet), and year slider
+
+ Dynamic UI: Built with R Shiny and leaflet for smooth interactivity
+
+** Data Disclaimer**
 
 The data displayed in this application are entirely simulated and do not represent real fishing locations or catches.
 
